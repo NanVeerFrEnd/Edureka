@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Forms in HTML</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<form action="form.html" method="post">
+		<!-- Instead of form.html change to process-form.html you will get command filled in process-form.html as "You have successfully logged in." -->
+
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"/>
+		<br /><br />
+
+		<label for="age">Age:</label>
+		<input type="number" id="age" name="age" max="30"/>
+		<br /><br />
+
+		<label for="mobileno">Mobile:</label>
+		<input type="number" id="mobileno" name="mobileno" value="00000000000"/>
+		<br /><br />
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"/>
+		<br /><br />
+
+		<label for="comments">Comments:</label>
+		<textarea id="comments" name="comments" multiple="multiple"></textarea>
+		<br /><br />
+
+		<label for="countries">Country:</label>
+		<select id="countries" name="countries">
+			<!--We can add values also to options, when you inspect you can see only values-->
+			<option value="Lon">London</option>
+			<option value= "Jer" selected="selected">Jerusalem</option>
+			<option value="Aus">Australia</option>
+			<option value="Ind">India</option>
+		</select>
+		<br /><br />
+
+		<!--checkbox gives multiple selection option, values are compulsory  -->
+		<label><input type="checkbox" name="chapters" value="Matthew">Matthew</label>
+		<label><input type="checkbox" name="chapters" value="Mark">Mark</label>
+		<label><input type="checkbox" name="chapters" value="Luke">Luke</label>
+		<label><input type="checkbox" name="chapters" value="John">John</label>
+		<br /><br />
+
+		<!--radio buttons are single selections, values are compulsory -->
+		<label><input type="radio" name="chapters" value="ot">Old Testament</label>
+		<label><input type="radio" name="chapters" value="nt">New Testament</label>
+		
+		<br /><br />
+
+		<label for="submit">Submit:</label>
+		<input type="submit" value="Sign me Up" />
+		<br /><br />
+
+		<label for="reset">Reset:</label>
+		<input type="reset" value="Reset the Form" />
+		<br />
+
+	</form>
+</body>
+</html>

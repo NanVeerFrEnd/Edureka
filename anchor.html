@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Anchor tags (hyperlinks or links </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/anchor.css">
+
+	<!-- CSS embedded within the HTML document -->
+	<!--
+	<style>
+		a {
+			color:  darkgray;
+		}
+
+		a:visited {
+			color:  burlywood;
+			font-size:  1.5em;
+		}
+
+		a:hover{
+			color:  yellowgreen;
+			font-size:  1.3em;
+		}
+
+		a:active{
+			color: rebeccapurple;
+			font-size: 1.2em;
+		}
+
+		#art{
+			text-decoration: none;
+		}
+	</style>
+-->
+</head>
+<body>
+
+	<h1>Adding links to other documents</h1>
+	<hr/>
+	<!-- Provide CSS styles for a particulat element using inline CSS (style attribute of the element, Usually we dont give inline style as it mixes up HTMl & CSS )-->
+
+	<!-- Usually links have underline, We gave CSS style tag to remove underline, i.e none.  path is relative to the HTML document -->
+	<!--Style tag given in CSS not inline element-->
+
+	<a href="img.html" style="text-decoration: none;">Verse Art</a><!-- CSS style in HTML not preferred --> 
+
+	<a href="img.html" id="art">Verse Art</a> <!--This is preferred way of styling--> 
+
+
+	<a href="mat.html#Birth of Jesus">Link to Matthew Chapter1(Birth of Jesus)</a>
+
+	<a href="https://www.biblegateway.com/" target="_blank">Bible Gateway(a blogging site)</a>
+
+	
+	
+</body>
+</html>
+

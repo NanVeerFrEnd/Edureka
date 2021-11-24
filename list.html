@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lists in HTML</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		#fruit > li:nth-child(even){
+			list-style-type:  circle; /* It can also take the value "none" */
+			color:  red;
+		}
+
+		ol{
+			list-style-type: lower-alpha;
+		}
+
+		ul > li:nth-child(odd) {
+			color: blue;
+		}
+
+
+	</style>
+</head>
+<body>
+	<h1>Ordered and Unordered lists in HTML</h1>
+
+	<ul id="fruit"><!-- unordered list -->
+		<li>Olives</li><!--list item-->
+		<li>Grapes</li>
+		<li>Pomegranantes</li>
+	</ul>
+
+	<ul><!-- unordered list -->
+		<li>Dove</li>
+		<li>Sparrow</li>
+		<li>Eagle</li>
+	</ul>
+
+	<ol><!-- ordered list -->
+		<li>Father</li>
+		<li>Son</li>
+		<li>Holy Spirit</li>
+	</ol>
+
+</body>
+</html>
