@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> HTML5 input types and attributes </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<!--
+		HTML5 input types
+		number, email, url, tel, range, color, date, datetime, search
+		attributes: placeholder, required, autocomplete="off"/"on", autofocus, min, max, formnovalidate (on submit button)
+	-->
+	<!-- file upload, multiple attribute, and enctype attribute of form (Not HTML 5 Syllabus ) -->
+
+	<form enctype="multipart/form-data" method="post">
+
+		Quantity: <input type="number" min="1" max="10" step="0.5" name="quantity"/>
+		<br/> <br/>
+
+		Your Name (text) : <input type="text" placeholder="Your Name" name="name" required/>
+		<br/> <br/>
+
+		Your Email (email) : <input type="email" name="email" autocomplete="off" required/>
+		<br/> <br/>
+		
+		Your Home Page (url): <input type="url" />
+		<br/> <br/>
+
+		Telephone Number: <input type="tel" name="tel" autofocus />
+		<br/> <br/>
+
+		Rating for course: <input type="range" name="range" min="1" max="5" />
+		<br/> <br/>
+
+		Start date of Journey: <input type="date" name="date" />
+		<br/> <br/>
+
+		Schedule the Time: <input type="time" name="time"/>
+		<br/> <br/>
+
+		Search the site: <input type="search" name="search"/>
+		<br/> <br/>
+
+		<input type="file" name="file" multiple />
+
+		<input type="submit" name="submit" value="Submit the Form" />
+
+		<input type="submit" name="submit" value="Submit the Form (without validations)" formnovalidate />
+
+	</form>
+
+</body>
+</html>

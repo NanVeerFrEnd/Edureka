@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Local and Session storage</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div></div>
+	<!--Local and Session storage use Javascript as code, Mainly JS code is written at the end of the page using <script></script> tag like CSS use <style></style> tag. -->
+
+	<!--how to store data and retrieve data -->
+	<script>
+		console.log(sessionStorage);
+		console.log(localStorage);
+
+		/*localStorage.setItem() stores a key-value */
+
+		localStorage.setItem('name1','Sanah');
+		localStorage.setItem('name2', 'Tharsini');
+		localStorage.setItem('name3', 'Nanthini');
+
+
+		/*localStorage.getItem() gets a key-value */
+
+		var name2 = localStorage.getItem('name2'); 
+		console.log( name2 ); /* logs "Tharsini" */
+
+		/*localStorage.removeItem() removes a key-value */
+		var name3 = localStorage.removeItem('name3');
+		console.log( name3 );
+
+
+
+		/*sessionStorage can be used similar to local storage, difference is data will be deleted when the tab is closed*/
+		/*sessionStorage.removeItem() removes a key-value */
+
+		sessionStorage.setItem('name1', 'Praveen');
+
+		var name1 = localStorage.setItem('name1'); 
+		console.log( name1 );
+
+		sessionStorage.getItem('name', 'Praveen');
+
+		var name1 = localStorage.getItem('name1'); 
+		console.log( name1 );
+
+		sessionStorage.removeItem('name', 'Praveen');
+
+		var name1 = localStorage.getItem('name1'); 
+		console.log( name1 );
+
+
+	</script>
+
+</body>
+</html>
